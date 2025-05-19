@@ -2,13 +2,19 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Model" />
+        <module name="convention" />
         <module name="general" />
-        <module name="services" />
+        <module name="database" />
+        <module name="common" />
+        <module name="web" />
+        <module name="general-test" />
+        <module name="Model" />
+        <module name="user-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,9 +25,14 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Model" options="" />
       <module name="base" options="-parameters" />
+      <module name="common" options="" />
+      <module name="convention" options="" />
+      <module name="database" options="" />
       <module name="general" options="" />
       <module name="my12306" options="" />
       <module name="tests" options="" />
+      <module name="user-service" options="" />
+      <module name="web" options="" />
     </option>
   </component>
 </project>

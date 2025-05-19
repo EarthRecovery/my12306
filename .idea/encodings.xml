@@ -3,6 +3,11 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/frameworks/Model/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/frameworks/base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/frameworks/common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/frameworks/convention/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/frameworks/database/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/frameworks/web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/services/user-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tests/general/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tests/src/main/java" charset="UTF-8" />

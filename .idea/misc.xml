@@ -12,6 +12,10 @@
         <option value="$PROJECT_DIR$/tests/general/pom.xml" />
         <option value="$PROJECT_DIR$/frameworks/base/pom.xml" />
         <option value="$PROJECT_DIR$/frameworks/Model/pom.xml" />
+        <option value="$PROJECT_DIR$/services/user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/frameworks/web/pom.xml" />
+        <option value="$PROJECT_DIR$/frameworks/database/pom.xml" />
+        <option value="$PROJECT_DIR$/frameworks/common/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
