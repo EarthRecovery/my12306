@@ -8,6 +8,8 @@ import com.project12306.userservice.service.UserService;
 import com.project12306.web.Results;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.RequiredArgsConstructor;
+import org.redisson.Redisson;
+import org.redisson.api.RedissonClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,6 +19,18 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserInfoController {
 
     private final UserService userService;
+
+    private final RedissonClient redisson;
+    private final RedissonClient redissonClient;
+
+    /**
+     * 测试
+     */
+    @GetMapping("/test")
+    public String test(){
+        System.out.println(redissonClient != null);
+        return "test";
+    }
 
     /**
      * 根据用户名查询用户信息
@@ -33,4 +47,12 @@ public class UserInfoController {
     public Result<UserActualQueryRespDTO> queryActualUserInfo(@RequestParam("username") @NotEmpty String userName) {
         return Results.success(userService.queryActualUserByUsername(userName));
     }
+
+    /**
+     * 查询用户名是否存在
+     */
+//    @GetMapping("/api/user-service/has-username")
+//    public Result<Boolean> hasUsername(@RequestParam("username") @NotEmpty String userName) {
+//        return Results.success(userService.queryUserIsExist(userName));
+//    }
 }

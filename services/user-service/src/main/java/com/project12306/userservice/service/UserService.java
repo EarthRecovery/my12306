@@ -10,4 +10,6 @@ public interface UserService {
     UserQueryRespDTO queryUserByUsername(@NotEmpty String username);
 
     UserActualQueryRespDTO queryActualUserByUsername(@NotEmpty String username);
+
+//    Boolean queryUserIsExist(@NotEmpty String username); not usable
 }
